@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Button } from "@rmwc/button";
+import { Typography } from "@rmwc/typography";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <Typography use="headline4">Little Lemon</Typography>
+      <Typography use="subtitle1" tag="p">
+        Chicago
+      </Typography>
+      <Typography use="body1">
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </Typography>
+      <Button raised icon="calendar_month">
+        Reserve a table
+      </Button>
     </div>
   );
 }

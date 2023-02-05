@@ -21,7 +21,7 @@ export default function Nav() {
                     <TopAppBarActionItem icon="restaurant_menu" />
                     </Tooltip>
                     <Tooltip content="Reservations">
-                    <TopAppBarActionItem icon="table_restaurant" />
+                    <TopAppBarActionItem icon="calendar_month" />
                     </Tooltip>
                     <Tooltip content="Order online">
                     <TopAppBarActionItem icon="shopping_basket" />

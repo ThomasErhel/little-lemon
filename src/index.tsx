@@ -31,7 +31,7 @@ root.render(
     // Takes most of the options for tooltips
     // See the Tooltip docs for more info
     tooltip={{
-      align: 'right'
+      align: 'bottom'
     }}
   >
       <BrowserRouter>

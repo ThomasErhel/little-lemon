@@ -1,3 +1,27 @@
 body {
   margin: 0;
 }
+
+primary1 {
+  color: #495E57;
+}
+
+primary2 {
+  color: #F4CE14;
+}
+
+secondary1 {
+  color: #EE9972;
+}
+
+secondary2 {
+  color: #FBDABB;
+}
+
+highlight1 {
+  color: #EDEFEE;
+}
+
+highlight2 {
+  color: #333333;
+}

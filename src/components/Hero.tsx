@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Card, CardActionButton, CardActions, CardMedia, CardPrimaryAction, Typography } from "rmwc";
 
 export default function Hero() {
@@ -33,7 +34,7 @@ export default function Hero() {
                     </div>
                 </CardPrimaryAction>
                 <CardActions>
-                        <CardActionButton raised icon="calendar_month" style={{ color: '#000000', backgroundColor: '#F4CE14' }}>Reserve a table</CardActionButton>
+                        <CardActionButton raised icon="calendar_month" tag={Link} to="/reservations" style={{ color: '#000000', backgroundColor: '#F4CE14' }}>Reserve a table</CardActionButton>
                 </CardActions>
             </Card>
         </div>

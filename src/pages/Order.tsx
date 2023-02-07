@@ -1,9 +1,9 @@
-import React from "react";
+import { Typography } from "rmwc";
 
 export default function Order() {
     return (
-        <div>
-            <h1>Order</h1>
-        </div>
+        <Typography className="title" use="headline2" tag="h1">
+            Order
+        </Typography>
     );
 }

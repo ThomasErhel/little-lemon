@@ -1,9 +1,9 @@
-import React from "react";
+import { Typography } from "rmwc";
 
 export default function NoMatch() {
     return (
-        <div>
-            <h1>404</h1>
-        </div>
+        <Typography className="title" use="headline2" tag="h1">
+            404
+        </Typography>
     );
 }

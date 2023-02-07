@@ -1,9 +1,9 @@
-import React from "react";
+import { Typography } from "rmwc";
 
 export default function Login() {
     return (
-        <div>
-            <h1>Login</h1>
-        </div>
+        <Typography className="title" use="headline2" tag="h1">
+            Reservations
+        </Typography>
     );
 }

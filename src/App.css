@@ -2,3 +2,15 @@
     font-family: sans-serif;
     padding: 1rem;
 }
+
+.App-reservations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

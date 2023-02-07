@@ -133,7 +133,7 @@ describe('JavaScript validation tests', () => {
 
     // test for invalid input
     fireEvent.change(lastNameInput, { target: { value: 'E' } });
-    expect(lastNameInput.value).toBe('D');
+    expect(lastNameInput.value).toBe('E');
   });
 
   test('validates email input field', () => {

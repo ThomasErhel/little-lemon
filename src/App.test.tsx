@@ -171,6 +171,6 @@ describe('JavaScript validation tests', () => {
     expect(dateInput.value).toBe('2023-05-05');
 
     // test for invalid input
-    fireEvent.change(dateInput, { target: { value: '2022-05-05' } });
-    expect(dateInput.value).toBe('2023-05-05');
+    fireEvent.change(dateInput, { target: { value: '2022-05' } });
+    expect(dateInput.value).toBe('2023-05');
 */

@@ -44,9 +44,9 @@ describe("BookingForm component", () => {
       const mockDispatch = jest.fn();
       const mockFetchAPI = jest.fn(() => Promise.resolve(['17:00 PM', '19:00 PM', '21:00 PM']));
 
-      await updateTimes('2022-03-01')(mockDispatch, undefined, { fetchAPI: mockFetchAPI });
+      await updateTimes('2023-05-05')(mockDispatch, undefined, { fetchAPI: mockFetchAPI });
 
-      expect(mockFetchAPI).toHaveBeenCalledWith('2023-03-01');
+      expect(mockFetchAPI).toHaveBeenCalledWith('2023-05-05');
       expect(mockDispatch).toHaveBeenCalledWith({
         type: UPDATE_TIMES,
         times: ['17:00 PM', '19:00 PM', '21:00 PM'],

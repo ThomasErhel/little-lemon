@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Menu from './pages/Menu';
 import Reservations from './pages/Reservations';
+import Confirmation from './pages/Confirmation';
 import Order from './pages/Order';
 import Login from './pages/Login';
 import NoMatch from './pages/NoMatch';
@@ -18,6 +19,7 @@ function App() {
           <Route path = "/about" element = {<About />}/>
           <Route path = "/menu" element = {<Menu />}/>
           <Route path = "/reservations" element = {<Reservations />}/>
+          <Route path = "/confirmation" element = {<Confirmation />}/>
           <Route path = "/order" element = {<Order />}/>
           <Route path = "/login" element = {<Login />}/>
           <Route path="*" element={<NoMatch />} />

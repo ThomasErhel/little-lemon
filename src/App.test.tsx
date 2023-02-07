@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react-hooks/rules-of-hooks */
 import { render, screen } from "@testing-library/react";
 import Reservations from "./pages/Reservations";
 

@@ -1,36 +1,23 @@
-import React, { useReducer } from 'react';
 import BookingForm from "../components/BookingForm";
+import { useReducer } from "react";
+import { fetchAPI } from "../components/Api";
+import { Typography } from "rmwc";
 
-interface AvailableTimesState {
-  selectedDate: string;
-  times: string[];
-}
-
-const initialState: AvailableTimesState = {
-  selectedDate: new Date().toISOString().slice(0, 10),
-  times: ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'],
-};
-
-const updateTimes = (state: AvailableTimesState, action: { type: string; date: string }) => {
-  switch (action.type) {
-    case "updateTimes":
-      return {
-        ...state,
-        selectedDate: action.date,
-        times: ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'],
-      };
-    default:
-      return state;
+export default function BookingPage() {
+  function updateTimes(date: any) {
+    return fetchAPI(date);
   }
-};
 
-const initializeTimes = () => initialState;
+  const output = fetchAPI(new Date());
 
-export default function Reservations() {
-  const [state, dispatch] = useReducer(updateTimes, initialState, initializeTimes);
+  const [availableTimes, dispatch] = useReducer(updateTimes, output);
+
   return (
     <div className="App-reservations">
-      <BookingForm availableTimes={state} dispatch={dispatch} />
+        <Typography className="title" use="headline2" tag="h1">
+            Reservations
+        </Typography>
+      <BookingForm availableTimes={availableTimes} updateTimes={dispatch} />
     </div>
   );
 }

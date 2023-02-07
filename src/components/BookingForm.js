@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Button, FormField, Select, Slider, TextField } from "rmwc";
+import { submitAPI } from "./Api";
+import { useNavigate } from 'react-router-dom';
 
 export default function ReservationForm(props) {
   const [firstName, setfirstName] = useState("");
@@ -27,6 +29,8 @@ export default function ReservationForm(props) {
     setFinalTime(props.availableTimes.map((times) => <option>{times}</option>));
   }
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const formData = {
@@ -41,6 +45,9 @@ export default function ReservationForm(props) {
       comments,
     };
     console.log(formData);
+    if (submitAPI(formData) === true) {
+      navigate('/confirmation');
+    }
   };
 
   return (

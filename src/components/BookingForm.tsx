@@ -2,14 +2,14 @@ import React from "react";
 import { Button, FormField, Select, Slider, TextField, Typography } from "rmwc";
 
 export default function BookingForm() {
-    const [time, setTime] = React.useState("");
-    const [date, setDate] = React.useState("");
+    const [selectedDate, setDate] = React.useState("");
+    const [selectedTime, setTime] = React.useState("");
     const [guests, setGuests] = React.useState(1);
     const [occasion, setOccasion] = React.useState("");
 
     const handleSubmit = (event: { preventDefault: () => void; }) => {
         event.preventDefault();
-        console.log("Date", date, "Time:", time, "Guests:", guests, "Occasion:", occasion);
+        console.log("Date", selectedDate, "Time:", selectedTime, "Guests:", guests, "Occasion:", occasion);
     };
     return (
         <>

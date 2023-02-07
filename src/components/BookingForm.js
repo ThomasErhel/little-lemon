@@ -166,6 +166,7 @@ export default function ReservationForm(props) {
         />
 
         <Button
+          aria-label="On Click"
           label="Make Your reservation"
           raised
           type="submit"

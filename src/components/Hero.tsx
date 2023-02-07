@@ -34,7 +34,7 @@ export default function Hero() {
                     </div>
                 </CardPrimaryAction>
                 <CardActions>
-                        <CardActionButton raised icon="calendar_month" tag={Link} to="/reservations" style={{ color: '#000000', backgroundColor: '#F4CE14' }}>Reserve a table</CardActionButton>
+                        <CardActionButton aria-label="On Click" raised icon="calendar_month" tag={Link} to="/reservations" style={{ color: '#000000', backgroundColor: '#F4CE14' }}>Reserve a table</CardActionButton>
                 </CardActions>
             </Card>
         </div>

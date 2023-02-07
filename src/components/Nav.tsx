@@ -14,22 +14,22 @@ export default function Nav() {
                     </TopAppBarSection>
                     <TopAppBarSection alignEnd>
                         <Tooltip content="Home">
-                            <TopAppBarActionItem icon="home" tag={Link} to="/" style={{ color: '#495E57' }} />
+                            <TopAppBarActionItem aria-label="On Click" icon="home" tag={Link} to="/" style={{ color: '#495E57' }} />
                         </Tooltip>
                         <Tooltip content="About">
-                            <TopAppBarActionItem icon="info" tag={Link} to="/about" style={{ color: '#495E57' }} />
+                            <TopAppBarActionItem aria-label="On Click" icon="info" tag={Link} to="/about" style={{ color: '#495E57' }} />
                         </Tooltip>
                         <Tooltip content="Menu">
-                            <TopAppBarActionItem icon="restaurant_menu" tag={Link} to="/menu" style={{ color: '#495E57' }} />
+                            <TopAppBarActionItem aria-label="On Click" icon="restaurant_menu" tag={Link} to="/menu" style={{ color: '#495E57' }} />
                         </Tooltip>
                         <Tooltip content="Reservations">
-                            <TopAppBarActionItem icon="calendar_month" tag={Link} to="/reservations" style={{ color: '#495E57' }} />
+                            <TopAppBarActionItem aria-label="On Click" icon="calendar_month" tag={Link} to="/reservations" style={{ color: '#495E57' }} />
                         </Tooltip>
                         <Tooltip content="Order online">
-                            <TopAppBarActionItem icon="shopping_basket" tag={Link} to="/order" style={{ color: '#495E57' }} />
+                            <TopAppBarActionItem aria-label="On Click" icon="shopping_basket" tag={Link} to="/order" style={{ color: '#495E57' }} />
                         </Tooltip>
                         <Tooltip content="Login">
-                            <TopAppBarActionItem icon="login" tag={Link} to="/login" style={{ color: '#495E57' }} />
+                            <TopAppBarActionItem aria-label="On Click" icon="login" tag={Link} to="/login" style={{ color: '#495E57' }} />
                         </Tooltip>
                     </TopAppBarSection>
                 </TopAppBarRow>

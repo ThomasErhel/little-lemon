@@ -53,6 +53,7 @@ export default function ReservationForm(props) {
   return (
     <form onSubmit={handleSubmit}>
       <FormField style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
+        <label htmlFor="firstName">First Name</label>
         <TextField
           type="text"
           id="firstName"
@@ -64,6 +65,7 @@ export default function ReservationForm(props) {
           onChange={(e) => setfirstName(e.target.value)}
         />
 
+        <label htmlFor="lastName">Last Name</label>
         <TextField
           type="text"
           id="lastName"
@@ -74,6 +76,7 @@ export default function ReservationForm(props) {
           onChange={(e) => setlastName(e.target.value)}
         />
 
+        <label htmlFor="email">Email</label>
         <TextField
           type="email"
           id="email"
@@ -85,6 +88,7 @@ export default function ReservationForm(props) {
           onChange={(e) => setEmail(e.target.value)}
         />
 
+        <label htmlFor="phonenum">Phone Number</label>
         <TextField
           type="tel"
           id="phonenum"
@@ -111,6 +115,7 @@ export default function ReservationForm(props) {
           onInput={(e) => setGuests(e.target.value)}
         />
 
+        <label htmlFor="date">Date</label>
         <TextField
           type="date"
           id="date"
@@ -121,6 +126,7 @@ export default function ReservationForm(props) {
           onChange={handleDateChange}
         />
 
+        <label htmlFor="time">Time</label>
         <Select
           id="time"
           label="Time"
@@ -128,6 +134,7 @@ export default function ReservationForm(props) {
           {finalTime}
         </Select>
 
+        <label htmlFor="occasion">Occasion</label>
         <Select
           id="occasion"
           label="Occasion"
@@ -141,6 +148,7 @@ export default function ReservationForm(props) {
           <option>Other</option>
         </Select>
 
+        <label htmlFor="preferences">Seating preferences</label>
         <Select
           id="preferences"
           label="Seating preferences"
@@ -153,6 +161,7 @@ export default function ReservationForm(props) {
           <option>Outdoor (Sidewalk)</option>
         </Select>
 
+        <label htmlFor="comments">Additional Comments</label>
         <TextField
           id="comments"
           textarea

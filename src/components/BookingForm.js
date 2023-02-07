@@ -52,7 +52,7 @@ export default function ReservationForm(props) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <FormField style={{ display: 'grid', maxWidth: 'auto', gap: '20px' }}>
+      <FormField style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
         <TextField
           type="text"
           id="firstName"

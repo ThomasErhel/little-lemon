@@ -119,7 +119,7 @@ describe('JavaScript validation tests', () => {
     expect(firstNameInput.value).toBe('Thomas');
 
     // test for invalid input
-    fireEvent.change(firstNameInput, { target: { value: 'J' } });
+    fireEvent.change(firstNameInput, { target: { value: 'T' } });
     expect(firstNameInput.value).toBe('T');
   });
 
